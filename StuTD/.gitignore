@@ -4,6 +4,3 @@
 /.vs
 /.vscode
 
-**.vcxproj
-**.vcxproj.user
-**.vcxproj.filters
