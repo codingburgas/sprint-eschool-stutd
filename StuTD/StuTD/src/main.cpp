@@ -1,8 +1,7 @@
-#include "raylib.h"
+#include "pch.h"
 #include "game.h"
 
-int main()
-{
+int main() {
     const int screenWidth = 800;
     const int screenHeight = 450;
 
@@ -10,14 +9,10 @@ int main()
     Game game;
     SetTargetFPS(60);
 
-    while (!WindowShouldClose())
-    {
+    while (!WindowShouldClose()) {
         BeginDrawing();
-
         ClearBackground(RAYWHITE);
-
         game.Draw();
-
         EndDrawing();
     }
 }
