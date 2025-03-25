@@ -9,10 +9,12 @@ int main() {
     Game game;
     SetTargetFPS(60);
     game.loadAssets();
+    
 
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(RAYWHITE);
+        game.Update();
         game.Draw();
         EndDrawing();
     }

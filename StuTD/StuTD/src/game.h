@@ -13,4 +13,10 @@ public:
 private:
     Texture2D background;
     Texture2D startButtonImage;
+    vector<QuestionsModel> questions;
+    int score = 0;
+    vector<int> usersAnswers;
+    vector<string> chosenAnswer; 
+    Questions questionsRepo;
+    
 };
