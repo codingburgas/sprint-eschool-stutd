@@ -8,6 +8,7 @@ int main() {
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
     Game game;
     SetTargetFPS(60);
+    game.loadAssets();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
@@ -15,4 +16,4 @@ int main() {
         game.Draw();
         EndDrawing();
     }
-}
+}   

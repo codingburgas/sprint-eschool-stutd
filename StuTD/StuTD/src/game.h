@@ -4,11 +4,13 @@
 
 class Game {
 public:
+    void loadAssets();
     void Draw();
     void Update();
     int currentQuestion = 0;
     GameState currentState = START_SCREEN;
+
 private:
-    questions questions;
-    
+    Texture2D background;
+    Texture2D startButtonImage;
 };

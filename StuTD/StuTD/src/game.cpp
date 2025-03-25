@@ -3,7 +3,6 @@
 #include "questions.h"
 
 void Game::Update() {
-    questions.Update(currentQuestion);
     if (currentState == START_SCREEN) {
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             Vector2 mousePosition = GetMousePosition();
@@ -18,5 +17,16 @@ void Game::Update() {
 }
 
 void Game::Draw() {
-    questions.Draw(currentQuestion, currentState);
+    ClearBackground(RAYWHITE);
+    DrawTexture(background, 0, 0, WHITE);
+
+    if (currentState == START_SCREEN) {
+        DrawTexture(startButtonImage, 260, 185, WHITE);
+    }
 }
+
+void Game::loadAssets() {
+    background = LoadTexture("assets/background.png");
+    startButtonImage = LoadTexture("assets/Start.png");
+}
+
