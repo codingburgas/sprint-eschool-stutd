@@ -9,7 +9,7 @@ int main() {
     Game game;
     SetTargetFPS(60);
     game.loadAssets();
-    
+
 
     while (!WindowShouldClose()) {
         BeginDrawing();
@@ -18,4 +18,4 @@ int main() {
         game.Draw();
         EndDrawing();
     }
-}   
+}

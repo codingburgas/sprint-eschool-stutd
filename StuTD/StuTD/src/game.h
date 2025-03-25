@@ -16,7 +16,7 @@ private:
     vector<QuestionsModel> questions;
     int score = 0;
     vector<int> usersAnswers;
-    vector<string> chosenAnswer; 
+    vector<string> chosenAnswer;
     Questions questionsRepo;
-    
+
 };
